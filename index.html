@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Encuesta / Resultados</title>
+  <style>
+    /* Estilos simples para que se vea bien dentro del iframe */
+    :root { color-scheme: light; }
+    body { margin:0; font-family: Arial, Roboto, sans-serif; background:#fff; }
+    .wrap { max-width: 720px; margin: 0 auto; border:1px solid #ddd; border-radius:10px; overflow:hidden; }
+    .hd { padding:16px 18px; border-bottom:1px solid #eee; }
+    .hd h2 { margin:0; font-size:22px; }
+    .banner { background:#FFD400; padding:10px 18px; font-weight:700; text-transform:uppercase; border-bottom:1px solid #eee; }
+    .tbl { width:100%; border-collapse:collapse; font-size:14px; }
+    .th { color:#6b7280; font-size:12px; }
+    .row { border-top:1px solid #eee; }
+    .party { display:inline-block; min-width:22px; text-align:center; color:#fff; border-radius:4px; padding:2px 6px; font-weight:700; }
+    .D { background:#0A66C2; } .R { background:#D21F3C; } .O { background:#6b7280; }
+    .bar-rail { position:relative; width:160px; height:10px; background:#e5e7eb; border-radius:6px; overflow:hidden; }
+    .bar-fill { height:10px; border-radius:6px; }
+    .note { padding:10px 18px; color:#6b7280; font-size:12px; border-top:1px solid #eee; }
+    .total { background:#fafafa; font-weight:700; }
+    @media (max-width:640px){
+      .bar-rail { width:120px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap" role="group" aria-label="Resultados - Proyectado ganador">
+    <div class="hd"><h2>New York City</h2></div>
+    <div class="banner">PROJECTED WINNER ✓</div>
+
+    <table class="tbl" aria-describedby="legend">
+      <thead>
+        <tr class="th">
+          <th style="text-align:left; padding:10px 18px;">Candidate</th>
+          <th style="text-align:center; padding:10px 0;">Party</th>
+          <th style="text-align:right; padding:10px 18px;">Votes</th>
+          <th style="text-align:right; padding:10px 18px;">Percentage</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Fila 1 -->
+        <tr class="row" style="background:#F3F8FF;">
+          <td style="padding:10px 18px;">Zorhan Mamdani ✓</td>
+          <td style="text-align:center;"><span class="party D">D</span></td>
+          <td style="text-align:right; padding:10px 18px;">1.036.051</td>
+          <td style="text-align:right; padding:10px 18px;">
+            <div style="display:inline-flex; gap:10px; align-items:center;">
+              <div class="bar-rail">
+                <div class="bar-fill" style="width:50.4%; background:#0A66C2;"></div>
+              </div>
+              <strong>50.4%</strong>
+            </div>
+          </td>
+        </tr>
+        <!-- Fila 2 -->
+        <tr class="row">
+          <td style="padding:10px 18px;">Andrew Cuomo</td>
+          <td style="text-align:center;"><span class="party O">O</span></td>
+          <td style="text-align:right; padding:10px 18px;">854.995</td>
+          <td style="text-align:right; padding:10px 18px;">
+            <div style="display:inline-flex; gap:10px; align-items:center;">
+              <div class="bar-rail">
+                <div class="bar-fill" style="width:41.6%; background:#6b7280;"></div>
+              </div>
+              <strong>41.6%</strong>
+            </div>
+          </td>
+        </tr>
+        <!-- Fila 3 -->
+        <tr class="row">
+          <td style="padding:10px 18px;">Curtis Sliwa</td>
+          <td style="text-align:center;"><span class="party R">R</span></td>
+          <td style="text-align:right; padding:10px 18px;">146.137</td>
+          <td style="text-align:right; padding:10px 18px;">
+            <div style="display:inline-flex; gap:10px; align-items:center;">
+              <div class="bar-rail">
+                <div class="bar-fill" style="width:7.1%; background:#D21F3C;"></div>
+              </div>
+              <strong>7.1%</strong>
+            </div>
+          </td>
+        </tr>
+        <!-- Totales -->
+        <tr class="row total">
+          <td style="padding:12px 18px; color:#6b7280; font-weight:400;">Total</td>
+          <td></td>
+          <td style="text-align:right; padding:12px 18px;">2.055.921</td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div id="legend" class="note">93.5% expected votes in (Est. remaining 145,000)</div>
+  </div>
+</body>
+</html>
